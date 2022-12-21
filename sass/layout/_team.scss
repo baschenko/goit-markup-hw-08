@@ -1,0 +1,15 @@
+.team {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: var(--accent-bg-color);
+
+  &__title {
+    margin-bottom: 50px;
+    color: var(--secodary-text-color);
+  }
+}
+
+.team__social-set {
+  margin-top: 16px;
+}
+

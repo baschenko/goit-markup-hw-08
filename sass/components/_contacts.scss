@@ -1,0 +1,25 @@
+.contacts {
+    display: flex;
+
+    &__item {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        align-content: center;
+        padding: 32px 0;
+
+        color: inherit;
+ 
+    }
+
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}

@@ -1,0 +1,37 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* 
+#212121 
+#FFFFFF 
+#757575 
+#2196F3 
+#EEEEEE 
+#000000 
+#F5F4FA 
+#FFFFFF 60 % 
+#2F303A 
+#ECECEC 
+#188CE8 
+*/
+
+
+:root {
+    --primary-text-color: #757575;
+    --secodary-text-color: #212121;
+    --hero-text-color: #fff;
+    --primary-bg-color: #fff;
+    --secondary-bg-color: #2f303a;
+    --accent-bg-color: #f5f4fa;
+    --accent-color: #2196f3;
+    --btn-active-color: #188ce8;
+    --second-logo-color: #000000;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --border-box-color: #eeeeee;
+    --border-header-color: #ececec;
+    --social-logo-color: #afb1b8;
+    --white-color: #fff;
+}
+
+$primaryFont: 'Roboto', sans-serif ;
+$brandFont: 'Raleway', sans-serif;

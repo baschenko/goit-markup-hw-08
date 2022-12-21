@@ -1,0 +1,177 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1);
+
+  max-width: 528px;
+  width: 100%;
+  max-height: 581px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scaleY(0);
+  }
+  &__close-btn {
+      position: absolute;
+      right: 8px;
+      top: 9px;
+
+      padding: 6px;
+      cursor: pointer;
+      background-color: var(--white-color);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      color: var(--second-logo-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+          color: var(--accent-color);
+      }
+  }
+
+  &__icon-close {
+      fill: currentColor;
+      display: block;
+  }
+
+  &__heading {
+      color: var(--secodary-text-color);
+      margin-top: 0;
+      margin-bottom: 12px;
+  }
+
+  &__input-group {
+      margin-bottom: 10px;
+  }
+
+  &__input-wrapper {
+      position: relative;
+  }
+
+  &__input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      padding-left: 42px;
+      color: var(--secodary-text-color);
+
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+          border: 1px solid var(--accent-color);
+          color: var(--accent-color);
+      }
+
+      &:hover+svg,
+      &:focus+svg {
+          fill: var(--accent-color);
+      }
+  }
+
+  &__input-icon {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__label {
+      display: block;
+      color: var(--primary-text-color);
+      margin-bottom: 4px;
+  }
+
+  &__text {
+      max-width: 448px;
+      width: 100%;
+      height: 120px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      resize: none;
+      padding: 12px 16px;
+
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+          border: 1px solid var(--accent-color);
+      }
+
+      &::placeholder {
+          @include font(null, 12px, 1.17, 0.01em);
+          color: rgba(117, 117, 117, 0.5);
+          padding-bottom: 20px;
+      }
+  }
+
+  &__input:focus-visible,
+  &__text:focus-visible,
+  &__politic-check:focus+label::before,
+  &__link:focus {
+      outline: var(--accent-color) auto 1px;
+  }
+
+  &__checkbox {
+      margin-bottom: 30px;
+  }
+
+  &__politic-lable {
+      @include flex-align;
+      cursor: pointer;
+
+      &::before {
+          content: '';
+          width: 16px;
+          height: 15px;
+          border: 2px solid var(--secodary-text-color);
+          border-radius: 2px;
+          margin-right: 8px;
+      }
+  }
+
+  &__politic-check:hover+label::before {
+      border-color: var(--accent-color);
+  }
+
+  &__politic-check:checked+label::before {
+      border: none;
+      background-image: url(../images/check.svg);
+  }
+
+  &__link {
+      color: var(--accent-color);
+      margin-left: 5px;
+  }
+
+  &__btn {
+      padding: 10px 52px;
+      margin: 0 auto;
+      display: block;
+  }
+}
+
+

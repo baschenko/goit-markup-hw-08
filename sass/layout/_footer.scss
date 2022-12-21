@@ -1,0 +1,58 @@
+.footer {
+  background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+
+  &__container {
+    display: flex;
+  }
+
+  &__contact-block {
+    margin-right: 70px;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+    color: var(--hero-text-color);
+  }
+
+  &__contacts {
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-right: 0;
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-style: normal;
+    color: var(--footer-text-color);
+    @include font(400, 14px, 1.71, 0.03em);
+    padding: 0;
+
+    &--accent {
+      color: var(--hero-text-color);
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: var(--white-color);
+  }
+
+  &__link--dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white-color);
+  }
+
+  &__mailing-form {
+    margin-left: auto;
+  }
+}
+

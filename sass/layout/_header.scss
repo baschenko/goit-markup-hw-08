@@ -1,0 +1,22 @@
+.header {
+  max-width: 1600px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border-header-color);
+
+  &__logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 91px;
+  }
+
+  &__container {
+    @include flex-align;
+  }
+  
+  &__contacts {
+    margin-left: auto;
+  }
+}
+
+
+

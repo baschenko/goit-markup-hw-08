@@ -1,0 +1,15 @@
+.logo {
+    font-family: $brandFont;
+    @include font(700, 26px, 1.19, null);
+    display: inline-block;
+    color: var(--second-logo-color);
+    
+    text-decoration: none;
+
+    &__text {
+           
+            color: var(--accent-color);
+        }
+
+}
+
