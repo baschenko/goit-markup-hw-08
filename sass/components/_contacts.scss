@@ -1,25 +1,42 @@
 .contacts {
+  @include desktop {
     display: flex;
+  }
 
-    &__item {
-        margin-right: 30px;
-
-        &:last-child {
-            margin-right: 0;
-        }
+  &__item {
+    @include desktop {
+      margin-right: 30px;
     }
 
-    &__link {
-        display: inline-flex;
-        align-content: center;
-        padding: 32px 0;
-
-        color: inherit;
- 
+    &:last-child {
+      margin-right: 0;
     }
+  }
 
-    &__icon {
-        margin-right: 10px;
-        fill: currentColor;
+  &__link {
+    display: inline-flex;
+    align-content: center;
+    margin-bottom: 10px;
+
+    color: inherit;
+    @include font(500, 12px, 1.17, 0.02em);
+
+    @include desktop {
+      @include font(null, 14px, 1.14, null);
+      padding: 32px 0;
     }
+  }
+
+  &__icon {
+    margin-right: 8px;
+    fill: currentColor;
+    width: 14px;
+    height: 14px;
+
+    @include desktop {
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
+    }
+  }
 }

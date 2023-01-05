@@ -2,21 +2,35 @@
   max-width: 1600px;
   margin: 0 auto;
   border-bottom: 1px solid var(--border-header-color);
+  position: relative;
 
   &__logo {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-right: 91px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 87px;
+
+    @include tablet {
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    @include desktop {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin-right: 91px;
+    }
   }
 
   &__container {
     @include flex-align;
   }
-  
+
   &__contacts {
     margin-left: auto;
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
   }
 }
-
-
-

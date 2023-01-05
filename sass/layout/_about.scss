@@ -1,4 +1,13 @@
-.about__title {
+.about {
+  padding-top: 0;
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+  
+  &__title {
     margin-bottom: 50px;
     color: var(--secodary-text-color);
+  }
 }

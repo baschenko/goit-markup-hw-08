@@ -1,12 +1,15 @@
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
 
   background-color: var(--secondary-bg-color);
   text-align: center;
 
+  @include desktop {
+    padding: 200px 0;
+  }
+
   &__overlay {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -15,10 +18,55 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-beckground.jpg);
+      url(../images/hero-beckground-mob.jpg);
+
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-beckground-mob-2x.jpg);
+    }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @include tablet {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-beckground-tab.jpg);
+
+      @include retina {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero-beckground-tab-2x.jpg);
+      }
+    }
+
+    @include desktop {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-beckground.jpg);
+
+      @include retina {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero-beckground-2x.jpg);
+      }
+    }
   }
 
   &__title {

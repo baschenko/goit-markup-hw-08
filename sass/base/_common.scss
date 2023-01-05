@@ -1,5 +1,7 @@
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .link {
@@ -14,12 +16,12 @@ img {
   }
 }
 
-
 body {
   font-family: $primaryFont;
   @include font(null);
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  margin: 0;
 }
 
 ::selection {
@@ -28,13 +30,21 @@ body {
 }
 
 .c-title-44 {
-  @include font(900, 44px, 1.36, 0.06em);
+  @include font(900, 26px, 1.62, 0.06em);
   text-transform: uppercase;
+
+  @include desktop {
+    @include font(null, 44px, 1.36, null);
+  }
 }
 
 .c-title-36 {
-  @include font(700, 36px, 1.17);
+  @include font(700, 28px, 1.18);
+
   text-align: center;
+  @include desktop {
+    @include font(700, 36px, 1.17);
+  }
 }
 
 .c-title-20 {
@@ -48,14 +58,14 @@ body {
 
 .c-title-16 {
   @include font(500, 16px, 1.19, null);
-    text-align: center;
+  text-align: center;
 }
 
-.c-title-14 {   
+.c-title-14 {
   @include font(700, 14px, 1.14, null);
   text-transform: uppercase;
 }
 
-.c-title-12 { 
+.c-title-12 {
   @include font(null, 12px, 1.17, 0.01em);
 }

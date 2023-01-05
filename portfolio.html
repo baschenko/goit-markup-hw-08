@@ -24,42 +24,129 @@
   <body>
     <!-- Header Navigation -->
     <header class="header">
-    <div class="header__container container ">
-      <nav class="navigation">
-        <a href="./index.html" class="logo header__logo"><span class="logo__text">Web</span>Studio</a>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link link" href="./index.html">Студія</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link link navigation__link--active" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link link" href="#">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__contacts">
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link link " href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+      <div class="header__container container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo header__logo"
+            ><span class="logo__text">Web</span>Studio</a
+          >
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="navigation__item">
+              <a
+                class="navigation__link link navigation__link--active"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+380961111111">
+                <svg class="contacts__icon">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="mobile-menu__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            class="mobile-menu__icon-menu"
+            aria-label="Пермикач мобільного меню"
+          >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </div>
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="mobile-menu__content">
+          <div>
+            <button class="mobile-menu__button js-close-menu">
+              <svg
+                width="40"
+                height="40"
+                class="mobile-menu__icon-cross"
+                aria-label="Пермикач мобільного меню"
+              >
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mob-navigation">
+              <ul class="mob-navigation__list">
+                <li class="mob-navigation__item">
+                  <a class="mob-navigation__link link" href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mob-navigation__item">
+                  <a
+                    class="mob-navigation__link link mob-navigation__link--active"
+                    href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mob-navigation__item">
+                  <a class="mob-navigation__link link" href="#">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <ul class="mob-contacts">
+              <li class="mob-contacts__item">
+                <a class="mob-contacts__tel link" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-contacts__item">
+                <a
+                  class="mob-contacts__mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-social-set">
+              <li class="mob-social-set__item">
+                <a class="mob-social-set__link link" href="#"> Instagram </a>
+              </li>
+              <li class="mob-social-set__item">
+                <a class="mob-social-set__link link" href="#"> Twitter </a>
+              </li>
+              <li class="mob-social-set__item">
+                <a class="mob-social-set__link link" href="#"> Facebook </a>
+              </li>
+              <li class="mob-social-set__item">
+                <a class="mob-social-set__link link" href="#"> LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <!--Main  -->
     <main>
@@ -70,7 +157,10 @@
           <div class="portfolio__filter">
             <ul class="filter">
               <li class="filter__item">
-                <button class="filter__btn button filter__carrent" type="button">
+                <button
+                  class="filter__btn button filter__carrent"
+                  type="button"
+                >
                   Усі
                 </button>
               </li>
@@ -85,9 +175,7 @@
                 </button>
               </li>
               <li class="filter__item">
-                <button class="filter__btn button" type="button">
-                  Дизайн
-                </button>
+                <button class="filter__btn button" type="button">Дизайн</button>
               </li>
               <li class="filter__item">
                 <button class="filter__btn button" type="button">
@@ -101,12 +189,39 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link link">
                 <div class="portfolio__action">
-                  <img
-                    src="./images/laptop_with_site.jpg"
-                    alt="ноутбук з сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/laptop_with_site.jpg    1x,
+                        ./images/laptop_with_site-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/laptop_with_site-tab.jpg    1x,
+                        ./images/laptop_with_site-tab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/laptop_with_site-mob.jpg    1x,
+                        ./images/laptop_with_site-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/laptop_with_site.jpg    1x,
+                        ./images/laptop_with_site-2x.jpg 2x
+                      "
+                      src="./images/laptop_with_site.jpg"
+                      alt="ноутбук з сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__pre-text c-title-18">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -122,12 +237,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link link">
                 <div class="portfolio__action">
-                  <img
-                    src="./images/poster.jpg"
-                    alt="два басктболіста"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="./images/poster.jpg 1x, ./images/poster-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/poster-tab.jpg    1x,
+                        ./images/poster-tab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/poster-mob.jpg    1x,
+                        ./images/poster-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="./images/poster.jpg 1x, ./images/poster-2x.jpg 2x"
+                      src="./images/poster.jpg"
+                      alt="два басктболіста"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio__pre-text c-title-18">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -145,12 +282,36 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link link">
                 <div class="portfolio__action">
-                  <img
-                    src="./images/seafood.jpg"
-                    alt="логотип ресторану seefood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="./images/poster.jpg 1x, ./images/poster-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/seafood-tab.jpg    1x,
+                        ./images/seafood-tab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/seafood-mob.jpg    1x,
+                        ./images/seafood-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/seafood.jpg    1x,
+                        ./images/seafood-2x.jpg 2x
+                      "
+                      src="./images/seafood.jpg"
+                      alt="логотип ресторану seefood"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__pre-text c-title-18">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -166,12 +327,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link link">
                 <div class="portfolio__action">
-                  <img
-                    src="./images/prime.jpg"
-                    alt="навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="./images/prime.jpg 1x, ./images/prime-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/prime-tab.jpg    1x,
+                        ./images/prime-tab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/prime-mob.jpg    1x,
+                        ./images/prime-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="./images/prime.jpg 1x, ./images/prime-2x.jpg 2x"
+                      src="./images/prime.jpg"
+                      alt="навушники"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio__pre-text c-title-18">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -187,12 +370,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link link">
                 <div class="portfolio__action">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="дві коробочки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="./images/boxes.jpg 1x, ./images/boxes-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/boxes-tab.jpg    1x,
+                        ./images/boxes-tab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/boxes-mob.jpg    1x,
+                        ./images/boxes-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="./images/boxes.jpg 1x, ./images/boxes-2x.jpg 2x"
+                      src="./images/boxes.jpg"
+                      alt="дві коробки"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio__pre-text c-title-18">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -208,12 +413,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link link">
                 <div class="portfolio__action">
-                  <img
-                    src="./images/borders.jpg"
-                    alt="монітор з сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/borders.jpg    1x,
+                        ./images/borders-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/borders-tab.jpg    1x,
+                        ./images/borders-tab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/borders-mob.jpg    1x,
+                        ./images/borders-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/borders.jpg    1x,
+                        ./images/borders-2x.jpg 2x
+                      "
+                      src="./images/borders.jpg"
+                      alt="монітор з сайтом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio__pre-text c-title-18">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -229,12 +462,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link link">
                 <div class="portfolio__action">
-                  <img
-                    src="./images/limit_edition.jpg"
-                    alt="відкрита книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/limit_edition.jpg    1x,
+                        ./images/limit_edition-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/limit_edition-tab.jpg    1x,
+                        ./images/limit_edition-tab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/limit_edition-mob.jpg    1x,
+                        ./images/limit_edition-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/limit_edition.jpg    1x,
+                        ./images/limit_edition-2x.jpg 2x
+                      "
+                      src="./images/limit_edition.jpg"
+                      alt="відкрита книга"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio__pre-text c-title-18">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -250,12 +511,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link link">
                 <div class="portfolio__action">
-                  <img
-                    src="./images/lab.jpg"
-                    alt="етикетка з написом LAB EL TAG"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="./images/lab.jpg 1x, ./images/lab-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/lab-tab.jpg    1x,
+                        ./images/lab-tab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/lab-mob.jpg    1x,
+                        ./images/lab-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="./images/lab.jpg 1x, ./images/lab-2x.jpg 2x"
+                      src="./images/lab.jpg"
+                      alt="етикетка з написом LAB EL TAG"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio__pre-text c-title-18">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -271,12 +554,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link link">
                 <div class="portfolio__action">
-                  <img
-                    src="./images/busines.jpg"
-                    alt="ноутбук з руками відкривають сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/busines.jpg    1x,
+                        ./images/busines-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/busines-tab.jpg    1x,
+                        ./images/busines-tab-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/busines-mob.jpg    1x,
+                        ./images/busines-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/busines.jpg    1x,
+                        ./images/busines-2x.jpg 2x
+                      "
+                      src="./images/busines.jpg"
+                      alt="ноутбук з руками відкривають сайт"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio__pre-text c-title-18">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -295,76 +606,88 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-    <div class="footer__container container">
-      <div class="footer__contact-block">
-        <a href="./index.html" class="logo footer__logo"><span class="logo__text">Web</span>Studio</a>
-        <address>
-          <ul class="contacts footer__contacts">
-            <li class="contacts__item footer__item">
-              <a href="https://goo.gl/maps/BHnjJmamnpTQk5Pf9" target="_blank" rel="noopener noreferrer nofollow"
-                class="contacts__link link footer__link footer__link--accent">м. Київ, пр-т Лесі Українки, 26</a>
-            </li>
-            <li class="contacts__item footer__item">
-              <a class="contacts__link link footer__link" href="mailto:info@devstudio.com">
-                info@devstudio.com
+      <div class="footer__container container">
+        <div class="footer__contact-block">
+          <a href="./index.html" class="logo footer__logo"
+            ><span class="logo__text">Web</span>Studio</a
+          >
+          <address>
+            <ul class="contacts footer__contacts">
+              <li class="contacts__item footer__item">
+                <a
+                  href="https://goo.gl/maps/BHnjJmamnpTQk5Pf9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link footer__link footer__link--accent"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="contacts__item footer__item">
+                <a class="link footer__link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item footer__item">
+                <a class="link footer__link" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__social">
+          <h2 class="footer__title c-title-14">Приєднуйтесь</h2>
+          <ul class="social-set">
+            <li class="social-set__item">
+              <a class="social-set__link link footer__link--dark" href="#">
+                <svg class="social-set__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="contacts__item footer__item">
-              <a class="contacts__link link footer__link" href="tel:+380961111111">
-                +38 096 111 11 11
+            <li class="social-set__item">
+              <a class="social-set__link link footer__link--dark" href="#">
+                <svg class="social-set__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-set__item">
+              <a class="social-set__link link footer__link--dark" href="#">
+                <svg class="social-set__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-set__item">
+              <a class="social-set__link link footer__link--dark" href="#">
+                <svg class="social-set__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
               </a>
             </li>
           </ul>
-        </address>
-    
-    
+        </div>
+        <div class="footer__mailing-form">
+          <h2 class="footer__title c-title-14">Підпишіться на розсилку</h2>
+          <form class="mailing-form">
+            <input
+              type="text"
+              class="mailing-form__input"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="mailing-form__btn button">
+              Підписатися
+              <svg class="mailing-form__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="footer__social">
-        <h2 class="footer__title c-title-14">Приєднуйтесь</h2>
-        <ul class="social-set">
-          <li class="social-set__item">
-            <a class="social-set__link link footer__link--dark" href="#">
-              <svg class="social-set__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-set__item">
-            <a class="social-set__link link footer__link--dark" href="#">
-              <svg class="social-set__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-set__item">
-            <a class="social-set__link link footer__link--dark" href="#">
-              <svg class="social-set__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-set__item">
-            <a class="social-set__link link footer__link--dark" href="#">
-              <svg class="social-set__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__mailing-form">
-        <h2 class="footer__title c-title-14">Підпишіться на розсилку</h2>
-        <form class="mailing-form">
-          <input type="text" class="mailing-form__input" name="email" placeholder="E-mail" />
-          <button type="submit" class="mailing-form__btn button">
-            Підписатися
-            <svg class="mailing-form__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
     </footer>
+    <!-- Scripts JS -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

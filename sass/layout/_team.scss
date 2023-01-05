@@ -4,12 +4,15 @@
   background-color: var(--accent-bg-color);
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 0;
     color: var(--secodary-text-color);
+    
+    @include desktop {
+      margin-bottom: 50px;
+    }
   }
 }
 
 .team__social-set {
   margin-top: 16px;
 }
-
