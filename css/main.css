@@ -427,7 +427,7 @@ body {
   color: var(--accent-color);
   position: relative;
 }
-.mob-social-set__link__item:not(:last-child) .mob-social-set__link::after {
+.mob-social-set__item:not(:last-child) .mob-social-set__link::after {
   content: "";
   position: absolute;
   height: 22px;

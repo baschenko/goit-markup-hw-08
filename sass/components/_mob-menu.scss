@@ -109,8 +109,8 @@
     @include font(500, 18px, 1.22, 0.02em);
     color: var(--accent-color);
     position: relative;
-
-    &__item:not(:last-child) &::after {
+  
+    .mob-social-set__item:not(:last-child) &::after {
       content: '';
       position: absolute;
       height: 22px;
@@ -118,5 +118,5 @@
       top: 0;
       border: 1px solid rgba(33, 33, 33, 0.2);
     }
-  }
+    }
 }
